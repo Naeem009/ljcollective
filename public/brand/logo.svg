@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="LJ Collective — Textiles &amp; Apparel">
+  <title>LJ Collective — Textiles &amp; Apparel</title>
+  <defs>
+    <linearGradient id="lj-mark" gradientUnits="userSpaceOnUse" x1="0" y1="78" x2="0" y2="150">
+      <stop offset="0" stop-color="#352720"/>
+      <stop offset="0.35" stop-color="#352720"/>
+      <stop offset="0.8" stop-color="#A9573D"/>
+      <stop offset="1" stop-color="#A9573D"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(-8 -6) scale(0.86)">
+    <path d="M 74 22 H 126 L 125 28 C 114 28 109 31 105 42 L 80 118 C 78 124 82 126 92 126 H 110 C 126 126 140 122 150 114 L 153 116 C 147 127 134 132 112 132 H 40 L 42 128 C 54 128 58 124 62 112 L 90 38 C 93 30 90 28 72 28 Z" fill="#352720"/>
+    <path d="M 142 56 H 198 L 197 62 C 191 62 188 64 185 72 L 162 138 C 157 151 148 163 135 171 C 117 182 90 187 58 186 C 86 180 108 174 121 163 C 131 155 138 147 142 136 L 168 70 C 170 64 168 62 140 62 Z" fill="url(#lj-mark)"/>
+  </g>
+  <rect x="168" y="28" width="1.4" height="124" fill="#352720" opacity="0.35"/>
+  <text x="188" y="96" fill="#352720" font-family="Georgia, 'Palatino Linotype', serif" font-size="52" font-weight="500">LJ Collective</text>
+  <text x="190" y="132" fill="#A9573D" font-family="Montserrat, 'Segoe UI', sans-serif" font-size="15" font-weight="500" letter-spacing="4.2">TEXTILES &amp; APPAREL</text>
+</svg>

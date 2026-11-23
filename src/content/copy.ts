@@ -16,7 +16,7 @@ export const homeCopy = {
     paragraphs: [
       "Great fashion products begin long before production.",
       "They start with an understanding of the market, a strong creative direction, the right materials and careful product development.",
-      "Lee Jaguar works alongside fashion brands and retailers to bring these elements together — from the first concept and collection planning to sampling, manufacturing and delivery.",
+      "LJ-Collective works alongside fashion brands and retailers to bring these elements together — from the first concept and collection planning to sampling, manufacturing and delivery.",
     ],
     highlight: "One partner. Every stage of development.",
   },
@@ -36,11 +36,11 @@ export const homeCopy = {
   about: {
     title: "Built around the way fashion is developed.",
     paragraphs: [
-      "Lee Jaguar brings together creative development, technical expertise and production coordination to support fashion brands and retailers.",
+      "LJ-Collective brings together creative development, technical expertise and production coordination to support fashion brands and retailers.",
       "We believe successful apparel development requires more than manufacturing. It requires an understanding of the product, the materials, the market and the processes needed to bring a collection to life.",
       "Working from the UAE and connected to international production capabilities, we collaborate with clients throughout the development journey.",
     ],
-    cta: "Discover Lee Jaguar",
+    cta: "Discover LJ-Collective",
   },
   final: {
     title: "Have a collection in mind?",
@@ -56,10 +56,10 @@ export const pageCopy = {
     title: "Fashion & retail",
     intro: [
       "Based in the UAE and connected to international production capabilities, we work with fashion brands and retailers to turn ideas into commercially ready apparel.",
-      "Lee Jaguar works alongside fashion brands and retailers to bring these elements together — from the first concept and collection planning to sampling, manufacturing and delivery.",
+      "LJ-Collective works alongside fashion brands and retailers to bring these elements together — from the first concept and collection planning to sampling, manufacturing and delivery.",
     ],
     audienceTitle: "Who we work with",
-    todo: "TODO(content): A fuller account of how Lee Jaguar works with each audience is still to be supplied.",
+    todo: "TODO(content): A fuller account of how LJ-Collective works with each audience is still to be supplied.",
     processTitle: "How a collection moves forward",
   },
   services: {
@@ -101,7 +101,7 @@ export const formCopy = {
   categories: "Product categories of interest",
   stage: "Estimated stage",
   brief: "Project brief",
-  consent: "I consent to Lee Jaguar contacting me about this enquiry.",
+  consent: "I consent to LJ-Collective contacting me about this enquiry.",
   submit: "Start a project",
   sending: "Sending enquiry",
   successTitle: "Thank you.",

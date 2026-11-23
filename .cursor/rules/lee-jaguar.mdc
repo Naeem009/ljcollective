@@ -1,5 +1,5 @@
 ---
-description: Lee Jaguar B2B website rules
+description: LJ-Collective B2B website rules
 alwaysApply: true
 ---
 - Source of truth is LEE_JAGUAR_DEVELOPMENT_SPEC.md. Follow it exactly; ask before deviating.

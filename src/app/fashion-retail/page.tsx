@@ -8,7 +8,7 @@ import { audiences } from "@/content/site";
 export const metadata: Metadata = {
   title: "Fashion & Retail",
   description:
-    "Lee Jaguar works with fashion brands and retailers to turn ideas into commercially ready apparel, from the first concept to sampling, manufacturing and delivery.",
+    "LJ-Collective works with fashion brands and retailers to turn ideas into commercially ready apparel, from the first concept to sampling, manufacturing and delivery.",
   alternates: { canonical: "/fashion-retail" },
 };
 

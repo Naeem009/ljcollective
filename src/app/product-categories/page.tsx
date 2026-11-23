@@ -9,7 +9,7 @@ import { images, type ImageKey } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Product Categories",
   description:
-    "From everyday essentials to contemporary collections, Lee Jaguar supports apparel development and production across nine fashion categories.",
+    "From everyday essentials to contemporary collections, LJ-Collective supports apparel development and production across nine fashion categories.",
   alternates: { canonical: "/product-categories" },
 };
 

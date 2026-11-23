@@ -1,6 +1,6 @@
 export const company = {
-  name: "Lee Jaguar",
-  legalName: "Lee Jaguar",
+  name: "LJ-Collective",
+  legalName: "LJ-Collective",
   descriptor: "Textiles & Apparel",
   statement: "Fashion development and production, from the first idea to the finished collection.",
   tagline: "Ideas into products. Creativity into production.",

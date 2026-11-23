@@ -1,4 +1,4 @@
-# LEE JAGUAR — Website Development Specification (Cursor-Ready)
+# LJ-Collective — Website Development Specification (Cursor-Ready)
 
 > **How to use this file in Cursor:** Place this file in the project root as `SPEC.md`, put the two files from `/reference` into `/reference`, then open Cursor Agent and paste the **Kickoff Prompt** in Section 20. Section 19 contains a ready-made `.cursor/rules` file. Build phase by phase (Section 18) — do not ask the agent to build everything in one pass.
 
@@ -8,7 +8,7 @@
 
 | Item | Value |
 |---|---|
-| Project name | **LEE JAGUAR** |
+| Project name | **LJ-Collective** |
 | Tagline (logo) | Textiles & Apparel |
 | Type | **B2B corporate marketing website** (lead generation). **NOT an e-commerce store.** No cart, checkout, prices, product SKUs, accounts or payments. |
 | Positioning | Full-service fashion development & production partner (UAE-based) |
@@ -192,7 +192,7 @@ lee-jaguar/
 │  ├─ components/
 │  │  ├─ layout/ Header.tsx MobileMenu.tsx Footer.tsx
 │  │  ├─ ui/ Button.tsx Eyebrow.tsx SectionHeading.tsx Reveal.tsx Divider.tsx Logo.tsx
-│  │  └─ sections/ Hero.tsx Intro.tsx Process.tsx Categories.tsx WhyLeeJaguar.tsx About.tsx FinalCta.tsx
+│  │  └─ sections/ Hero.tsx Intro.tsx Process.tsx Categories.tsx WhyLjCollective.tsx About.tsx FinalCta.tsx
 │  ├─ content/
 │  │  ├─ site.ts                # nav, company, contact (env-driven)
 │  │  ├─ process.ts
@@ -231,14 +231,14 @@ Inner pages for this phase are **clean, lighter layouts** reusing the same compo
 
 - **Monogram:** stylised italic serif **"L" + "J"** interlocked. The "L" is Espresso; the "J" descends below the baseline with a **Burnt Sienna** curved tail/leaf stroke.
 - **Vertical thin divider** (Stone/Espresso, 1px) between monogram and wordmark.
-- **Wordmark:** `LEE JAGUAR` in a high-contrast serif (Playfair Display–style), uppercase, Espresso, with a small `®` superscript.
+- **Wordmark:** `LJ Collective` in a high-contrast serif (Playfair Display–style), Espresso.
 - **Descriptor beneath:** `TEXTILES & APPAREL` in small, widely tracked Montserrat caps (Sienna).
 
 Implementation steps for the agent:
 
 1. Create `public/brand/logo.svg` by **vectorising** the reference (trace the monogram to SVG paths; set the wordmark as live text converted to paths for fidelity). Keep colours to `#352720` and `#A9573D`. Transparent background.
-2. Export `logo-mark.svg` (monogram only) for favicon and mobile header.
-3. Build `<Logo variant="full | mark" />` using `next/image` or inline SVG. It links to `/` with `aria-label="Lee Jaguar — Home"`.
+2. Favicon is the letters `LJC` (`public/brand/favicon.svg`). The mobile header uses the `LJ Collective` wordmark.
+3. Build `<Logo variant="full | mark" />` using `next/image` or inline SVG. It links to `/` with `aria-label="LJ-Collective — Home"`.
 4. Sizes: desktop header height 44–48px; mobile 36px. Minimum clear space = height of the "L".
 5. **Do not redesign, restyle or substitute the logo.** If vector tracing is not accurate enough, ship the high-res PNG (`logo@2x.png`, transparent) as a temporary asset and add `TODO(brand): replace with client vector file`.
 
@@ -375,7 +375,7 @@ Two-column editorial layout on `cream`, 1px `stone` vertical divider (like refer
 - Right copy:
   - "Great fashion products begin long before production."
   - "They start with an understanding of the market, a strong creative direction, the right materials and careful product development."
-  - "Lee Jaguar works alongside fashion brands and retailers to bring these elements together — from the first concept and collection planning to sampling, manufacturing and delivery."
+  - "LJ-Collective works alongside fashion brands and retailers to bring these elements together — from the first concept and collection planning to sampling, manufacturing and delivery."
 - Highlight statement (Sienna, large Playfair/Montserrat caps): `ONE PARTNER. EVERY STAGE OF DEVELOPMENT.`
 - Image: `intro-studio.webp` placed alongside (below text on mobile).
 
@@ -422,7 +422,7 @@ Content (`src/content/categories.ts`):
 | 08 | INTIMATES & SHAPEWEAR | `intimates-shapewear` | Underwear, briefs, camisoles and shapewear. |
 | 09 | BABYWEAR & KIDSWEAR | `babywear-kidswear` | Rompers, bodysuits, baby sets and children's apparel. |
 
-### SECTION 06 — WHY LEE JAGUAR
+### SECTION 06 — WHY LJ-Collective
 
 - H2: `CREATIVE THINKING. TECHNICAL EXPERTISE. PRODUCTION EXECUTION.`
 - Four editorial columns (desktop), 2×2 (tablet), stacked (mobile). Each: thin top rule in `stone`, numeral in Sienna, title, text; optional small image above. Background may alternate to `stone` at ~30% tint **only if** tint is built from the palette (e.g., `rgba(201,184,165,0.25)` over cream).
@@ -436,15 +436,15 @@ Content (`src/content/categories.ts`):
 
 No claims about certifications, owned factories, clients or capacity.
 
-### SECTION 07 — ABOUT LEE JAGUAR
+### SECTION 07 — ABOUT LJ-Collective
 
 - Layout: large tall editorial photo on one side (≈6/12), text on the other. Image alternates side from Section 03 (image right here if Section 03 image was right).
 - H2: `BUILT AROUND THE WAY FASHION IS DEVELOPED.`
 - Copy:
-  1. "Lee Jaguar brings together creative development, technical expertise and production coordination to support fashion brands and retailers."
+  1. "LJ-Collective brings together creative development, technical expertise and production coordination to support fashion brands and retailers."
   2. "We believe successful apparel development requires more than manufacturing. It requires an understanding of the product, the materials, the market and the processes needed to bring a collection to life."
   3. "Working from the UAE and connected to international production capabilities, we collaborate with clients throughout the development journey."
-- CTA: `DISCOVER LEE JAGUAR →` → `/about`
+- CTA: `DISCOVER LJ-Collective →` → `/about`
 
 ### SECTION 08 — FINAL CALL TO ACTION
 
@@ -458,7 +458,7 @@ No claims about certifications, owned factories, clients or capacity.
 
 - Background `stone` (#C9B8A5). **All text Espresso.** Links underline on hover.
 - Columns: Logo + statement ("Fashion development and production, from the first idea to the finished collection.") | Footer navigation (Home, Fashion & Retail, Our Services, Product Categories, About Us, Contact) | `FASHION DEVELOPMENT & PRODUCTION` focus label | Contact details (from env; render only if set) | Social icons (render only if URL set).
-- Bottom bar: `© 2026 Lee Jaguar. All Rights Reserved.`
+- Bottom bar: `© 2026 LJ-Collective. All Rights Reserved.`
 - Do not use any white text, including icons.
 
 ---
@@ -547,7 +547,7 @@ CONTACT_FROM_EMAIL=
 
 ## 14. SEO & PERFORMANCE
 
-- Per-page `metadata` (title, description, OpenGraph, canonical). Homepage title suggestion: `Lee Jaguar | Fashion Development & Apparel Production Partner (UAE)`.
+- Per-page `metadata` (title, description, OpenGraph, canonical). Homepage title suggestion: `LJ-Collective | Fashion Development & Apparel Production Partner (UAE)`.
 - JSON-LD `Organization` (only with verified data) and `WebSite`.
 - `sitemap.ts`, `robots.ts`.
 - Lighthouse targets (mobile): Performance ≥ 90, Accessibility ≥ 95, SEO ≥ 95, Best Practices ≥ 95. LCP < 2.5s, CLS < 0.05.
@@ -619,7 +619,7 @@ Save as `.cursor/rules/lee-jaguar.mdc`:
 
 ```md
 ---
-description: Lee Jaguar B2B website rules
+description: LJ-Collective B2B website rules
 alwaysApply: true
 ---
 - Source of truth is SPEC.md. Follow it exactly; ask before deviating.
@@ -644,7 +644,7 @@ alwaysApply: true
 
 ```text
 Read @SPEC.md fully, plus @reference/design-reference.jpeg and @reference/logo-reference.png.
-We are building the LEE JAGUAR B2B corporate website (not e-commerce).
+We are building the LJ-Collective B2B corporate website (not e-commerce).
 Start with PHASE 1 only (Scaffold) from SPEC.md Section 18. Create the Next.js + TypeScript + Tailwind project in the current directory, configure Playfair Display and Montserrat with next/font, implement the design tokens exactly as in Section 2 (no white in the theme), add the no-white check script, and create the .cursor/rules file from Section 19.
 Do not build any sections yet. When finished, list what you created, run `npm run check`, and wait for my approval before Phase 2.
 Constraints: omit all "Corporate & Institutional" content from the reference image, never use white text, and never invent contact details or claims.

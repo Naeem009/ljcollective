@@ -8,7 +8,7 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Lee Jaguar brings together creative development, technical expertise and production coordination to support fashion brands and retailers.",
+    "LJ-Collective brings together creative development, technical expertise and production coordination to support fashion brands and retailers.",
   alternates: { canonical: "/about" },
 };
 

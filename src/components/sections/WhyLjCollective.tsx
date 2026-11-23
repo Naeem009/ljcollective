@@ -5,9 +5,9 @@ import { homeCopy } from "@/content/copy";
 import { whyPoints } from "@/content/why";
 import { images, type ImageKey } from "@/lib/images";
 
-export function WhyLeeJaguar() {
+export function WhyLjCollective() {
   return (
-    <section id="why-lee-jaguar" className="bg-stone/25 py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
+    <section id="why-lj-collective" className="bg-stone/25 py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
       <Container wide>
         <SectionHeading title={homeCopy.why.title} />
         <ol className="mt-14 grid gap-10 md:grid-cols-2 xl:grid-cols-4">

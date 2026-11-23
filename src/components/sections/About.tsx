@@ -9,7 +9,7 @@ export function About() {
   const copy = homeCopy.about;
 
   return (
-    <section id="about-lee-jaguar" className="bg-cream py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
+    <section id="about-lj-collective" className="bg-cream py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div>

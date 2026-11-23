@@ -4,7 +4,7 @@ import { FinalCta } from "@/components/sections/FinalCta";
 import { Hero } from "@/components/sections/Hero";
 import { Intro } from "@/components/sections/Intro";
 import { Process } from "@/components/sections/Process";
-import { WhyLeeJaguar } from "@/components/sections/WhyLeeJaguar";
+import { WhyLjCollective } from "@/components/sections/WhyLjCollective";
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
       <Intro />
       <Process />
       <Categories />
-      <WhyLeeJaguar />
+      <WhyLjCollective />
       <About />
       <FinalCta />
     </>

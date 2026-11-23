@@ -21,23 +21,27 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-const description =
-  "From trend research and creative direction to fabric development, sampling and production, Lee Jaguar brings every stage of apparel development together. Based in the UAE.";
+const description = `From trend research and creative direction to fabric development, sampling and production, ${company.name} brings every stage of apparel development together. Based in the UAE.`;
+
+const title = `${company.name} | Fashion Development & Apparel Production Partner (UAE)`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
-    default: "Lee Jaguar | Fashion Development & Apparel Production Partner (UAE)",
-    template: "%s | Lee Jaguar",
+    default: title,
+    template: `%s | ${company.name}`,
   },
   description,
   applicationName: company.name,
   icons: {
-    icon: [{ url: "/brand/favicon.png", type: "image/png" }],
+    icon: [
+      { url: "/brand/favicon.svg", type: "image/svg+xml" },
+      { url: "/brand/favicon.png", type: "image/png" },
+    ],
     apple: [{ url: "/brand/favicon-512.png", type: "image/png" }],
   },
   openGraph: {
-    title: "Lee Jaguar | Fashion Development & Apparel Production Partner (UAE)",
+    title,
     description,
     siteName: company.name,
     locale: "en_GB",
@@ -52,7 +56,7 @@ function jsonLd() {
     "@type": "Organization",
     name: company.name,
     url,
-    logo: `${url}/brand/logo.png`,
+    logo: `${url}/brand/logo.svg`,
     slogan: company.tagline,
     description: company.statement,
   };

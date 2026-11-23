@@ -91,7 +91,7 @@ export function Footer() {
                     <a
                       href={linkedin}
                       className="inline-flex h-11 w-11 items-center justify-center text-espresso hover:text-sienna"
-                      aria-label="Lee Jaguar on LinkedIn"
+                      aria-label={`${company.name} on LinkedIn`}
                     >
                       <LinkedInIcon className="h-6 w-6" />
                     </a>
@@ -102,7 +102,7 @@ export function Footer() {
                     <a
                       href={instagram}
                       className="inline-flex h-11 w-11 items-center justify-center text-espresso hover:text-sienna"
-                      aria-label="Lee Jaguar on Instagram"
+                      aria-label={`${company.name} on Instagram`}
                     >
                       <InstagramIcon className="h-6 w-6" />
                     </a>
@@ -115,7 +115,7 @@ export function Footer() {
       </div>
       <div className="border-t border-espresso/20">
         <p className="w-full px-5 py-5 text-base text-espresso md:px-8 lg:px-12">
-          © 2026 Lee Jaguar. All Rights Reserved.
+          © 2026 {company.name}. All Rights Reserved.
         </p>
       </div>
     </footer>
